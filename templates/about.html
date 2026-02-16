@@ -2,10 +2,18 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
  <title>My Website - About</title>
 </head>
 <body>
- <h1>Samara Stewart</h1>
- <p>I work in architecture, construction, and graphic design, I combine creativity with technical skills and always look for ways to improve and grow.</p>
+
+<div class="container">
+    <h1>Samara Stewart</h1>
+    
+    <img src="{{ url_for('static', filename='cat.jpg') }}" alt="Profile Picture" class="catimg">
+    
+    <p>I work in architecture, construction, and graphic design, I combine creativity with technical skills and always look for ways to improve and grow.</p>
+</div>
+
 </body>
-</html> 
+</html>
